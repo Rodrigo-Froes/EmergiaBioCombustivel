@@ -9,7 +9,7 @@ public class User {
     
     public User(int codigo, String nome){
         this.nome = nome;
-        this.codigo = codigo;
+        this.codigo = codigo;      
     }
     
     public void calculoEtanol(float litros){

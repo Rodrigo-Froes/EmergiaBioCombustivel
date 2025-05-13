@@ -15,4 +15,20 @@ public class CalculoEmergiaEtanol {
         this.litros = litros;
         resultEmergiaEtanol = this.litros * vlEmergiaLitroEtanol;
     }
+
+    public float getLitros() {
+        return litros;
+    }
+
+    public void setLitros(float litros) {
+        this.litros = litros;
+    }
+
+    public float getResultEmergiaEtanol() {
+        return resultEmergiaEtanol;
+    }
+
+    public void setResultEmergiaEtanol(float resultEmergiaEtanol) {
+        this.resultEmergiaEtanol = resultEmergiaEtanol;
+    }    
 }

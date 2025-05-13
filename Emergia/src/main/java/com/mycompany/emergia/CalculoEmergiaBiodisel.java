@@ -26,4 +26,28 @@ public class CalculoEmergiaBiodisel {
             default -> System.out.println("Opção inválida!");
         }
     }
+
+    public float getLitros() {
+        return litros;
+    }
+
+    public void setLitros(float litros) {
+        this.litros = litros;
+    }
+
+    public float getResultEmergiaBiodisel() {
+        return resultEmergiaBiodisel;
+    }
+
+    public void setResultEmergiaBiodisel(float resultEmergiaBiodisel) {
+        this.resultEmergiaBiodisel = resultEmergiaBiodisel;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 }

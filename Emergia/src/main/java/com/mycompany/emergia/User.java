@@ -21,6 +21,15 @@ public class User {
         }
     }
     
+    public void calculoBiodisel(String tipo, float litros){
+        for(i = 0; i <= calcBiodisel.length; i++){
+            if(calcBiodisel[i]==null){
+                calcBiodisel[i].CalculoEmergiaBiodisel(tipo,litros);
+                break;
+            }
+        }
+    }
+    
     public String getNome(){
         return this.nome;
     }

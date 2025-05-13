@@ -9,25 +9,21 @@ public class CalculoEmergiaBiodisel {
     final private float vlEmergiaLitroBiodiselM = (float) trasformidadeBiodiselMacauba * vlEnergeticoBiodisel / 1000;
     private float litros;
     private float resultEmergiaBiodisel;
+    private String tipo;
 
     public void CalculoEmergiaBiodisel(String tipo, float litros) {
-        if (tipo == "Babaçu") {
-            this.litros = litros;
-            resultEmergiaBiodisel = this.litros * vlEmergiaLitroBiodiselB;
+        switch (tipo) {
+            case "Babaçu" -> {
+                this.tipo = tipo;
+                this.litros = litros;
+                resultEmergiaBiodisel = this.litros * vlEmergiaLitroBiodiselB;
+            }
+            case "Macauba" -> {
+                this.tipo = tipo;
+                this.litros = litros;
+                resultEmergiaBiodisel = this.litros * vlEmergiaLitroBiodiselM;
+            }
+            default -> System.out.println("Opção inválida!");
         }
-        if (tipo == "Macauba") {
-            this.litros = litros;
-            resultEmergiaBiodisel = this.litros * vlEmergiaLitroBiodiselM;
-        }
-    }
-
-    public void calcEmergiaBiodiselBabacu(float litros) {
-        this.litros = litros;
-        resultEmergiaBiodisel = this.litros * vlEmergiaLitroBiodiselB;
-    }
-
-    public void calcEmergiaBiodiselMacauba(float litros) {
-        this.litros = litros;
-        resultEmergiaBiodisel = this.litros * vlEmergiaLitroBiodiselM;
     }
 }
